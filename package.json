@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Small API for keeping track of records of 3D snake games.",
   "scripts": {
-    "dev": "node src/index.js",
+    "dev": "node api/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
