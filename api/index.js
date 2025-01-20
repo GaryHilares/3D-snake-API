@@ -19,7 +19,11 @@ app.post("/submit-run", async (req, res) => {
   const db = cluster.db("3D-snake");
   const dataCollection = db.collection("data");
   const data = await dataCollection.findOne({});
-  if (!req.body || !req.body.score || typeof req.body.score !== "number") {
+  if (
+    !req.body ||
+    req.body.score === undefined ||
+    typeof req.body.score !== "number"
+  ) {
     res.status(403);
     res.send("Malformed request");
   } else {
