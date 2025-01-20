@@ -29,6 +29,7 @@ app.post("/submit-run", async (req, res) => {
       }
     );
     res.status(200);
+    res.header("Access-Control-Allow-Origin", "*");
     res.send({ runCount: data.runCount, highscore: data.highscore });
   }
 });
