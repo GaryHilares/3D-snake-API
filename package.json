@@ -1,0 +1,21 @@
+{
+  "name": "3d-snake-api",
+  "version": "1.0.0",
+  "description": "Small API for keeping track of records of 3D snake games.",
+  "scripts": {
+    "dev": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "serverless"
+  ],
+  "author": "Gary Hilares",
+  "license": "CC-BY-4.0",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongodb": "^6.12.0"
+  }
+}
